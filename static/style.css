@@ -1,0 +1,53 @@
+body {
+    background: silver;
+    font-family: "Helvetica";
+    font-size: 100%;
+}
+
+#wrapper {
+    width: 40.5em;
+}
+
+#header {
+    font-size: 1.5em;
+    background: #E0E0E0;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+#sidebar{
+    width: 8em;
+    padding: 0.5em;
+    padding-top: 0;
+    background: #E0E0E0;
+    float: left;
+}
+
+#main{
+    width: 30em;
+    padding: 0.5em;
+    padding-top: 0;
+    background: #E0E0E0;
+    float: right;
+}
+
+
+h1 {
+    font-size: 1.5em;
+}
+
+#postbody {
+    text-align: justify;
+}
+
+label {
+    width: 5em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block
+}
+
+.submit input {
+    margin-left: 7em;
+}

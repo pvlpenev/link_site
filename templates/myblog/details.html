@@ -1,0 +1,9 @@
+{%extends "base.html" %}
+{% block content %}
+{% if post %}
+    <h1>{{ post.title }}</h1>
+    <div id="postbody">{{ post.body|linebreaks }}</div>
+    <div id="timestamp">{{ post.pub_date }}</div>
+{% endif %}
+{% endblock %}
+ 

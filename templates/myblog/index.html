@@ -1,0 +1,14 @@
+{%extends "base.html" %}
+{% block content %}
+{% if latest_blog_list %}
+    {% for post in latest_blog_list %}
+        <h1><a href="{{ post.id }}/">{{ post.title }}</a></h1>
+        <div id="postbody">{{ post.body|linebreaks|slice:":512" }}...</div>
+        <a href="{{ post.id }}/">Read more...</a>
+        <div id="timestamp">{{ post.pub_date }}</div>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+{% endblock %}
